@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <title>The World - @ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/lib/bootswatch/yeti/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css"/>
     <link rel="stylesheet" href="~/styles/app.css" />
 </head>
 <body>
@@ -21,17 +24,18 @@
     <div id="wrapper">
         <section id="main">
             <div>
-                <button id="sidebarToggle">Toggle Menu</button>
+                <button id="sidebarToggle" class="btn btn-primary"><i class="fa fa-angle-left"></i></button>
             </div>
             <div>
                 @RenderBody()
             </div>
         </section>
         <footer>
-            &copy; 2016 The World
+            <p class="text-primary">&copy; 2016 The World</p>
         </footer>
     </div>
     <script type="text/javascript" src="~/lib/jQuery/dist/jquery.js"></script>
+    <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="~/scripts/index.js"></script>
 
     @RenderSection("Scripts", false)
