@@ -1,8 +1,24 @@
 {
-	"name": "ASP.NET",
-	"private": true,
+  "name": "TheWorld",
+  "homepage": "https://github.com/mcm0027/theWorld.NET",
+  "authors": [
+    "Matt Morris <mcm0027@yahoo.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "underscore": "~1.8.3",
-    "jQuery": "~2.2.2"
+    "underscore": "^1.8.3",
+    "jquery": "^2.2.2",
+    "jquery-validation": "^1.15.0",
+    "jquery-validation-unobtrusive": "^3.2.6"
   }
 }
