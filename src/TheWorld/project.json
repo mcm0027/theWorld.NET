@@ -19,7 +19,9 @@
     "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc1-final",
     "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
     "Microsoft.Extensions.CodeGeneration.Core": "1.0.0-rc1-final",
-    "AutoMapper":  "4.0.4" 
+    "AutoMapper": "4.0.4",
+    "Microsoft.Net.Http.Client": "1.0.0-beta8-15501",
+    "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final"
   },
 
   "commands": {
@@ -28,8 +30,21 @@
   },
 
   "frameworks": {
-    "dnx451": { },
-    "dnxcore50": { }
+    "dnx451": {
+      "dependencies": {
+        "Microsoft.Net.Http": "2.2.22",
+        "System.Net.Http": "4.0.1-beta-23516"
+      },
+      "frameworkAssemblies": {
+        "System.Net": "4.0.0.0",
+        "System.Net.Http": "4.0.0.0",
+        "System.Net.Http.WebRequest": "4.0.0.0"
+      }
+    },
+    "dnxcore50": {
+      "frameworkAssemblies": {
+      }
+    }
   },
 
   "exclude": [
